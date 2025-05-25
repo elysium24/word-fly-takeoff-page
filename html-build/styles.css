@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fb923c, #a855f7, #2563eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #fde047, #fb923c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-ios {
+    background: #000;
+    color: white;
+}
+
+.btn-android {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-yellow {
+    background: #eab308;
+    color: black;
+}
+
+.btn-green {
+    background: #22c55e;
+    color: white;
+}
+
+/* Features Section */
+.features {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #dbeafe, #fae8ff);
+}
+
+.features h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(45deg, #a855f7, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.8);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #374151;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Preview Section */
+.preview {
+    padding: 100px 0;
+    background: white;
+}
+
+.preview h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(45deg, #22c55e, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.preview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.preview-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #374151;
+}
+
+.preview-text p {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.stat:first-child {
+    background: #fef3c7;
+}
+
+.stat:last-child {
+    background: #dbeafe;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat:first-child .stat-number {
+    color: #d97706;
+}
+
+.stat:last-child .stat-number {
+    color: #2563eb;
+}
+
+.stat-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.game-screen {
+    background: linear-gradient(135deg, #fb923c, #a855f7);
+    padding: 60px 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    transform: rotate(3deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(45deg, #a855f7, #2563eb);
+    color: white;
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 60px;
+    padding-top: 30px;
+}
+
+.footer-bottom p {
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .features h2,
+    .preview h2 {
+        font-size: 2rem;
+    }
+    
+    .preview-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .character-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .features,
+    .preview {
+        padding: 60px 0;
+    }
+    
+    .footer {
+        padding: 60px 0 30px;
+    }
+}
