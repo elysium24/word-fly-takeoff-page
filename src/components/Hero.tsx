@@ -41,25 +41,8 @@ const Hero = () => {
           Challenge yourself with this exciting Trivia & Word game featuring hundreds of levels of brain-teasing fun!
         </p>
 
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <Button 
-            size="lg" 
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-4 text-lg rounded-full transform transition-all duration-200 hover:scale-105 shadow-xl"
-          >
-            Play Now
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-purple-600 font-bold px-8 py-4 text-lg rounded-full transform transition-all duration-200 hover:scale-105 shadow-xl"
-          >
-            Watch Trailer
-          </Button>
-        </div>
-
         {/* Download buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <Button 
             size="lg" 
             className="bg-black hover:bg-gray-800 text-white font-bold px-8 py-4 text-lg rounded-full transform transition-all duration-200 hover:scale-105 shadow-xl flex items-center gap-3"
