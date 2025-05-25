@@ -5,7 +5,7 @@ const Features = () => {
   const features = [
     {
       title: "Epic Word Adventures",
-      description: "Explore magical worlds while building your vocabulary",
+      description: "Explore famous cities and real-world locations while building your vocabulary",
       icon: "🗺️",
     },
     {
